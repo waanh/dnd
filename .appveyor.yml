@@ -1,0 +1,16 @@
+version: 1.0.{build}
+image: Ubuntu
+branches:
+  only:
+    - main
+before_build:
+  - yarn install
+build_script:
+  - yarn build
+artifacts:
+  - path: /dist
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  local_dir: dist

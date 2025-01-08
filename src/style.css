@@ -1,0 +1,27 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  .board {
+    display: flex;
+    gap: 10px;
+  }
+  .column {
+    background: #f4f5f7;
+    padding: 10px;
+    width: 30%;
+    border-radius: 5px;
+  }
+  .card {
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    cursor: grab;
+  }
+  .card:active {
+    cursor: grabbing;
+  }
+  .cards.dragover {
+    border: 2px dashed #0079bf;
+  }
