@@ -1,10 +1,7 @@
 version: 1.0.{build}
 image: Ubuntu
 environment:
-  nodejs_version: "20"
-install:
-  - ps: Install-Product node `20` 
-  - npm install -g yarn           
+  nodejs_version: "20"          
 branches:
   only:
     - main
