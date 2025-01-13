@@ -1,7 +1,7 @@
 const path = require('path');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const ASSET_PATH = process.env.NODE_ENV === 'production' ? './' : '/';
+const ASSET_PATH = process.env.NODE_ENV === 'production' ? '/' : '/';
 
 module.exports = {
   mode: 'development',
@@ -10,6 +10,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
     publicPath: ASSET_PATH,
+    clean: true,
   },
   module: {
     rules: [
