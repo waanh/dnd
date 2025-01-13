@@ -23,6 +23,7 @@
   },
   "devDependencies": {
     "@babel/preset-react": "^7.26.3",
+    "html-loader": "^5.1.0",
     "mini-css-extract-plugin": "^2.9.2"
   }
 }
